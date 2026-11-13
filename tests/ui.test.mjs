@@ -24,7 +24,7 @@ test("founder assessment stays operable and disclosures are accurate",()=>{
   for(const field of ["name","email","country","entityType","goal","consent"]){
     assert.ok(html.includes('name="'+field+'"'),field+" missing");
   }
-  assert.match(html,/Official company filing services are not yet available/);
+  assert.match(html,/No official incorporation or regulated services currently offered/);
   assert.match(html,/name="heroEntity"/);
   assert.match(app,/api\/intake/);
   assert.match(app,/heroEntity/);
