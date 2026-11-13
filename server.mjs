@@ -21,7 +21,7 @@ function saveLeads(items){const tmp=leadFile+'.tmp';fs.writeFileSync(tmp,JSON.st
 function audit(action,id){fs.appendFileSync(auditFile,JSON.stringify({action,id,at:new Date().toISOString()})+'\n',{mode:0o600})}
 function clean(v,n=180){return typeof v==='string'?v.replace(/[\u0000-\u001f]/g,' ').trim().slice(0,n):''}
 function auth(req){const a=req.headers.authorization||'';if(!adminToken||!a.startsWith('Bearer '))return false;const b=Buffer.from(a.slice(7));const c=Buffer.from(adminToken);return b.length===c.length&&crypto.timingSafeEqual(b,c)}
-function rate(ip){const now=Date.now();const prev=(limits.get(ip)||[]).filter(t=>now-t<3600000);if(prev.length>=6)return false;prev.push(now);limits.set(ip,prev);return true}
+function rate(ip){const now=Date.now();const prev=(limits.get(ip)||[]).filter(t=>now-t<3600000);if(prev.length>=40)return false;prev.push(now);limits.set(ip,prev);return true}
 async function readBody(req){let size=0;const chunks=[];for await(const c of req){size+=c.length;if(size>30000)throw Error('too_large');chunks.push(c)}try{return JSON.parse(Buffer.concat(chunks).toString('utf8'))}catch{throw Error('invalid_json')}}
 function serve(res,file){
  const ext=path.extname(file).toLowerCase();const mime=ct[ext]||'application/octet-stream';
@@ -35,13 +35,13 @@ const server=http.createServer(async(req,res)=>{
  if(req.method==='GET'&&req.url==='/api/health')return json(res,200,{status:'ok',stage:'founding',storage:!!process.env.DATA_DIR});
  if(req.method==='GET'&&req.url==='/api/status')return json(res,200,{legalStatus:'pre-incorporation',intake:'open',payments:'disabled',operatingModel:'pilot'});
  if(req.method==='POST'&&req.url==='/api/intake'){
-   const ip=(req.socket.remoteAddress||'unknown');
+   const forwarded=req.headers['x-forwarded-for'];const ip=typeof forwarded==='string'?forwarded.split(',')[0].trim().slice(0,96):(req.socket.remoteAddress||'unknown');
    if(!rate(ip))return json(res,429,{error:'rate_limited',message:'Please try again later.'});
    try {
      const b=await readBody(req);if(b.website)return json(res,200,{accepted:true,reference:'RECEIVED'});
      const name=clean(b.name,100),email=clean(b.email,180),country=clean(b.country,80),company=clean(b.company,120),url=clean(b.url,220),entityType=clean(b.entityType,70),fundingIntent=clean(b.fundingIntent,45),
      stage=clean(b.stage,60),goal=clean(b.goal,600),sector=clean(b.sector,90),budget=clean(b.budget,60),timeline=clean(b.timeline,80),source=clean(b.source,80);
-     if(name.length<2||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||!country||!goal||b.consent!==true)
+     if(name.length<2||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||!country||!goal||!['Delaware C-Corporation','U.S. LLC','Not sure yet'].includes(entityType)||b.consent!==true)
        return json(res,422,{error:'invalid_fields',message:'Please complete the required fields and consent.'});
      const id='VLC-'+crypto.randomBytes(4).toString('hex').toUpperCase();
      const lead={id,name,email,country,company,url,entityType,fundingIntent,stage,goal,sector,budget,timeline,source,createdAt:new Date().toISOString(),

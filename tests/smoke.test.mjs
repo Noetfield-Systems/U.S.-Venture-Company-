@@ -17,7 +17,7 @@ test('intake and private operator lifecycle',async()=>{
    const body={name:'Example Founder',email:'founder@example.org',country:'Canada',entityType:'Delaware C-Corporation',fundingIntent:'Yes',goal:'Validate market for a software MVP',consent:true};
    const r=await fetch(base+'/api/intake',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
    assert.equal(r.status,201);const saved=await r.json();assert.match(saved.reference,/^VLC-/);
-   const unauthorized=await fetch(base+'/api/admin/leads');assert.equal(unauthorized.status,401);
+   const invalid=await fetch(base+'/api/intake',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...body,entityType:'not-a-structure'})});assert.equal(invalid.status,422);const unauthorized=await fetch(base+'/api/admin/leads');assert.equal(unauthorized.status,401);
    const headers={Authorization:'Bearer '+token};
    const list=await (await fetch(base+'/api/admin/leads',{headers})).json();
    assert.equal(list.leads.length,1);assert.equal(list.leads[0].email,body.email);assert.equal(list.leads[0].entityType,'Delaware C-Corporation');
