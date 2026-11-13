@@ -10,7 +10,7 @@ const css=fs.readFileSync(path.join(root,"public/styles.css"),"utf8");
 const app=fs.readFileSync(path.join(root,"public/app.js"),"utf8");
 
 test("reference hero and landing hierarchy",()=>{
-  for(const value of ["Global Founders. U.S. Growth.","Build your U.S.","company. Go beyond","incorporation.","Your U.S. launch","Founder application","Market-entry next steps","From formation plans to first customers."]){
+  for(const value of ["Global Founders. U.S. Growth.","Launch a U.S. company","and grow beyond","incorporation.","Your U.S. launch","Founder application","Market-entry next steps","From formation plans to first customers."]){
     assert.ok(html.includes(value),value+" missing");
   }
   assert.equal((html.match(/class="feature-card"/g)||[]).length,3);
@@ -37,4 +37,16 @@ test("responsive theme and javascript syntax",()=>{
   }
   const syntax=spawnSync(process.execPath,["--check",path.join(root,"public/app.js")],{encoding:"utf8"});
   assert.equal(syntax.status,0,syntax.stderr);
+});
+
+
+test("premium reference details preserve conversion paths",()=>{
+  assert.match(html,/hero-light-trails\.svg/);
+  assert.match(html,/class="ink-emphasis"/);
+  assert.match(html,/trust-icon/);
+  assert.match(html,/href="\/demo"/);
+  assert.match(html,/href="#assessment"/);
+  assert.match(css,/\.feature-card/);
+  assert.match(css,/\.floating-card/);
+  assert.match(css,/\.hero-light-trails/);
 });
