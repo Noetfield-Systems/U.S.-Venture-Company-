@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#f7f7fd"/>
+<meta name="description" content="Explore an interactive U.S. company-formation workspace: entity setup, founder equity, documents, EIN, banking, and startup operations.">
+<title>Explore the Platform | U.S. Venture Company</title>
+<link rel="icon" type="image/svg+xml" href="/brand-favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800;850&display=swap" rel="stylesheet"><link rel="stylesheet" href="/demo.css">
+</head><body>
+<header class="top"><a class="identity" href="/"><span class="logomark">◢</span><span>U.S. Venture <b>Company</b></span></a>
+<div class="top-center"><span class="play-indicator"></span> SAMPLE WORKSPACE <span class="top-divider"></span> Explore how a U.S. startup launch could work</div>
+<div class="top-actions"><button class="navtoggle" id="navtoggle" aria-label="Toggle workspace navigation" aria-expanded="false">☰</button><button class="btn btn-ghost" id="reset">Reset demo</button><a href="/#assessment" class="btn btn-primary">Start your own plan <span>↗</span></a></div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar"><div class="workspace-switch"><span class="company-avatar">N</span><span class="switch-copy"><strong id="sidebar-company">Northstar Labs</strong><small>Startup formation workspace</small></span><span class="switch-chev">⌄</span></div>
+<div class="nav-group-label">YOUR WORKSPACE</div>
+<nav id="demo-nav" aria-label="Workspace views">
+<button class="sideitem active" data-view="overview"><span class="glyph">▦</span>Overview</button>
+<button class="sideitem" data-view="formation"><span class="glyph">◈</span>Formation <span class="pill-mini">4</span></button>
+<button class="sideitem" data-view="founders"><span class="glyph">♧</span>Founders & equity</button>
+<button class="sideitem" data-view="documents"><span class="glyph">▤</span>Documents <span class="pill-mini">8</span></button>
+<div class="nav-group-label group-inside">AFTER FORMATION</div>
+<button class="sideitem" data-view="tax"><span class="glyph">▤</span>EIN & banking</button>
+<button class="sideitem" data-view="operations"><span class="glyph">◎</span>Operations</button>
+<button class="sideitem" data-view="growth"><span class="glyph">▥</span>Market entry</button>
+<button class="sideitem" data-view="funding"><span class="glyph">◇</span>Fundraising</button>
+</nav>
+<div class="side-bottom"><div class="support-box"><div class="support-icon">✦</div><strong>Build in the U.S. from anywhere.</strong><p>From formation to your first customers, all in one place.</p><a href="/#assessment">Talk to our founding team ↗</a></div><p>Interactive sample · browser-only data</p></div></aside>
+<main class="main" id="main">
+<div class="mobile-crumb">NORTHSTAR LABS <span> / </span> <span id="mobile-view">Overview</span></div>
+<div class="content" id="view-container" aria-live="polite"></div>
+</main></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div class="modal-backdrop" id="modal" hidden><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-bar"><div><span class="eyebrow">WORKSPACE PREVIEW</span><h2 id="modal-title">Document</h2></div><button class="modal-x" id="modal-close" aria-label="Close">×</button></div><div id="modal-content"></div><div class="modal-actions"><button class="btn btn-ghost" id="modal-dismiss">Close</button></div></section></div>
+<script src="/demo.js" defer></script></body></html>

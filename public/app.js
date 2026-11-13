@@ -61,8 +61,8 @@ workspaceNav.forEach(button=>button.addEventListener("click",()=>{
 }));
 $$(".workspace-item").forEach(button=>button.addEventListener("click",()=>{
   const type=button.dataset.item;
-  if(type==="structure"||type==="founders")$("#assessment")?.scrollIntoView({behavior:"smooth",block:"start"});
-  else $("#how-it-works")?.scrollIntoView({behavior:"smooth",block:"start"});
+  const tabs={structure:"formation",founders:"founders",market:"growth",operations:"operations"};
+  location.href="/demo#"+(tabs[type]||"overview");
 }));
 
 // Preview selection is real input that carries through to the founder intake.

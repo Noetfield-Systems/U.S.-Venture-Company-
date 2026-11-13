@@ -75,6 +75,7 @@ const server=http.createServer(async(req,res)=>{
  if(req.method!=='GET'&&req.method!=='HEAD')return json(res,405,{error:'method_not_allowed'});
  let url;try{url=new URL(req.url,'http://localhost')}catch{return json(res,400,{error:'invalid_url'})}
  if(url.pathname==='/operator')return serve(res,path.join(publicDir,'operator.html'));
+ if(url.pathname==='/demo')return serve(res,path.join(publicDir,'demo.html'));
  if(url.pathname==='/'||['/assessment','/services','/how-it-works','/about','/pricing','/privacy','/terms'].includes(url.pathname))return serve(res,path.join(publicDir,'index.html'));
  const rel=decodeURIComponent(url.pathname);const f=path.resolve(publicDir,'.'+rel);
  if(!f.startsWith(publicDir+path.sep))return json(res,403,{error:'forbidden'});
