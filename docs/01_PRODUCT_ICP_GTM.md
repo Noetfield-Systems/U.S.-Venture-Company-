@@ -1,30 +1,40 @@
-# ICP · PRODUCT · GTM
-## Priority ICP 1: Technical global founders
-5–25 person teams or solo technical founders, working MVP/early revenue, clear U.S. customer hypothesis but limited U.S. sales capacity. Urgency trigger: U.S. prospects emerging or recent expansion decision. Buyer: founder/CEO. Job: convert a technically ready product into a repeatable outbound and sales pipeline.
+# Formation-native ICP, Product & Go-to-Market v2
+## Buyer ICPs
+**P0 — international startup founders:** 1–4 cofounders; software/AI venture; MVP or first US investor; wants Delaware C-Corp, vesting, stock, 83(b), EIN and high-confidence official record. Buyer is CEO/cofounders. Trigger is investor diligence, accelerator acceptance, cofounder agreement or US customer demand. Alternatives: Stripe Atlas, Clerky, Gust Launch.
 
-## ICP 2: Small SaaS/AI operators
-B2B SaaS/AI teams with $0–$50k MRR (hypothesis range), need conversion/offer position and actual U.S. pipeline proof. Exclude generic "fundraising guaranteed" requests.
+**P1 — global digital operator:** solo international ecommerce, digital-service, SaaS or consulting operator who needs a legitimate US LLC, clarity about tax status, EIN, agent, and total annual cost. Trigger is US payment/business activity. Alternatives: doola, StartGlobal, Firstbase. Never imply LLC is universally tax-advantageous.
 
-## ICP 3: Distributed startup teams
-Cross-border operators needing accountable execution capacity, not a consultant deck. May be valuable with repeat retainers but must cap manual support hours.
+**P1 — existing incorporated entity:** US startup ≤24 months old needs records, corporate maintenance, contractor agreements, cap table and compliance reminders. Alternatives: Clerky, Firstbase, Gust Launch. Require evidence of prior incorporation before migrating records.
 
-## Primary buyer pains
-Unknown buyer selection, no U.S. positioning, lack of compliant outreach workflow, scattered tools, opaque progress, ineffective initial customer discovery. Do not assert an incorporation requirement for every customer.
+**P2 — expansion team:** established foreign business planning actual US operations in more than one state, regulated/tax complexity. Alternative: Commenda, legal/accounting specialists. Only serve when real qualified providers exist.
 
-## Offers — launch hypotheses (USD)
-- Free Founder Assessment: form + manual triage + one actionable recommendation.
-- $249 Market Readiness Brief: ICP, obstacles, order of operations.
-- $1,490 U.S. Launch Sprint (14-day scope): two ICP segments, offer brief, launch-page draft, up to 40 source-linked prospective organizations, two approved outreach sequences, CRM with next action/owner/date, handoff and receipt.
-- $499/month Execution Desk: recurring bounded follow-up and QA.
-- Custom from $3,500 only where scope, capacity and quality acceptance are defined.
+## Ranking rubric (hypotheses, not measured data)
+P0 founders: urgency 5/5, product fit 5/5, recurring attach 4/5. P1 digital LLC: urgency 5/5, fit 4/5, recurring attach 5/5. Existing entities: urgency 3/5, fit 3/5, renewal value 5/5. Complex expansion: urgency 4/5, currently operational fit 1/5.
 
-No payment capability activates until a real legal merchant-of-record exists.
+## Value proposition
+"Launch your U.S. company. Build what comes next."
+A clear formation pathway and verifiable next steps for global founders, with post-incorporation support becoming available as actual delivery partnerships are established.
 
-## Conversion funnel
-Public SEO / founder community / LinkedIn / referrals -> assessment consent -> saved CRM lead -> qualify -> discovery -> SOW quote -> approved checkout -> paid verified -> authorized workpacket -> Noetfield vendor work -> independent QA -> client acceptance -> followup. No unauthorized cold messages or invented proof.
+## Funnel by ICP
+Search/referral → C-Corp or LLC content → readiness wizard → user-specific high-level plan → itemized quote + operating obligation disclosure → human/authorized provider review → consent/signatures → payment by real merchant → official filing → receipt → EIN/equity/banking steps → ongoing support renewal.
 
-## Benchmark lessons
-Stripe Atlas: high-intent, simple CTA, customer confidence. Clerky: defensible docs and clear scope. Firstbase: broader post-formation workflow. Competitive difference: act after the paperwork, keep progress visible. Sources: https://stripe.com/atlas ; https://www.clerky.com/ ; https://www.firstbase.io/.
+## Intent keywords and content
+- incorporate Delaware C corporation as a non-US resident
+- US LLC for foreign founders
+- Stripe Atlas pricing and alternatives (factual, dated)
+- Delaware C-Corp vs LLC international startup
+- US registered agent fees and renewals
+- after company incorporation: EIN and founder stock
+- 83(b) deadline after founder equity grant
+- California vs Delaware corporate registration when operating from California
 
-## Copy principles
-English public site; thoughtful, restrained, executive corporate style; no unchecked market stats, partner logos, customer testimonies, physical U.S. office, actual "incorporated" badge, fake advisor profiles, or simulated production status.
+Do not buy traffic on promises of guaranteed visa, SBA eligibility, funding, legal advice, or U.S. bank approval.
+
+## Sales discovery prompts
+Where do founders reside? What is your business? Do you intend venture fundraising? How many cofounders? Is a company already formed? Where is actual US business activity performed? When do you need an entity? What banking or payment provider do you intend to use? What cost surprises worry you? Which specialist advice do you already have?
+
+## Conversion experiments
+A: "Form a Delaware C-Corp" vs "Start your US company" headline for P0. B: explicit projected recurring costs vs headline-only price. C: cofounder invitation early vs later. D: source-backed formation timeline vs generic "fast setup". Track completion and paid verified conversion rather than views.
+
+## Channel plan
+Founder communities, founder-focused SEO, credible plain language guides, developer-founder outreach, accelerators, founder referrals. Every partnership claimed only with proof. No mass unsolicited messaging.

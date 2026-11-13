@@ -39,12 +39,12 @@ const server=http.createServer(async(req,res)=>{
    if(!rate(ip))return json(res,429,{error:'rate_limited',message:'Please try again later.'});
    try {
      const b=await readBody(req);if(b.website)return json(res,200,{accepted:true,reference:'RECEIVED'});
-     const name=clean(b.name,100),email=clean(b.email,180),country=clean(b.country,80),company=clean(b.company,120),url=clean(b.url,220),
+     const name=clean(b.name,100),email=clean(b.email,180),country=clean(b.country,80),company=clean(b.company,120),url=clean(b.url,220),entityType=clean(b.entityType,70),fundingIntent=clean(b.fundingIntent,45),
      stage=clean(b.stage,60),goal=clean(b.goal,600),sector=clean(b.sector,90),budget=clean(b.budget,60),timeline=clean(b.timeline,80),source=clean(b.source,80);
      if(name.length<2||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||!country||!goal||b.consent!==true)
        return json(res,422,{error:'invalid_fields',message:'Please complete the required fields and consent.'});
      const id='VLC-'+crypto.randomBytes(4).toString('hex').toUpperCase();
-     const lead={id,name,email,country,company,url,stage,goal,sector,budget,timeline,source,createdAt:new Date().toISOString(),
+     const lead={id,name,email,country,company,url,entityType,fundingIntent,stage,goal,sector,budget,timeline,source,createdAt:new Date().toISOString(),
        consent:{accepted:true,at:new Date().toISOString(),privacyVersion:'2026-11-13'},status:'new',owner:'Founding team',nextAction:'Review founder assessment',nextActionDate:null,notes:''};
      const items=readLeads();items.unshift(lead);saveLeads(items);audit('intake_created',id);
      return json(res,201,{accepted:true,reference:id});

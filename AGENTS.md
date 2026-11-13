@@ -1,9 +1,20 @@
-# U.S. Venture Company — Agent Instructions
-- Mission: ship a credible, premium, English-language, pre-incorporation market-validation site and convert lawful user interest into verified intake records and scoped commercial work.
-- Founder thesis: Delaware C-Corp proposed; Canada founder is nonexecutive shareholder/investor; California founder is U.S. partner with no presumed executive acceptance. Noetfield Systems Inc. is an independent technical vendor, not the parent or automatically authorized operator.
-- Pre-incorporation: no fabricated company filing, EIN, office, partnerships, customers, fundraising, financial results or payment settlement. Never imply registered legal provider, bank or law firm.
-- Launch wedge: U.S. market entry and execution for international digital founders; pricing remains indicative until an entity/merchant-of-record arrangement actually exists.
-- Execution: build, test, deploy, monitor; public CTA -> persisted prospect -> real operator follow-up -> signed scope -> payment through approved entity -> authorized work order -> QA receipt. Do not invent conversion counts.
-- Operational boundaries: no direct capital, bank, legal or tax effects by AI; limited contractor scope; confirmed human signers; tenant privacy and opt-out.
-- Production intake requires persistent DATA_DIR volume and high-entropy ADMIN_TOKEN; do not log tokens or form PII.
-- Do not replace the user's chosen independent venture with Noetfield's other projects or mix legal identities.
+# AGENTS.md — formation-category discipline (v2.0)
+Founder mandate: Build → Ship → Acquire → Earn → Verify, without artificial blockers. Keep legally accurate identity, client consent and genuine corporate/financial transitions.
+
+## Product north star
+U.S. incorporation and continued startup operations for global founders. Category PRIMARY benchmark: Stripe Atlas. Only direct product competitors Clerky, Firstbase, doola, Gust Launch, StartGlobal, Commenda and comparable state-formation providers may define primary UI/business benchmark. Don't pivot into unrelated AI dashboard, generic CRM, consulting shop or aesthetics inspired by Linear, Attio, Vanta, Ramp, etc.
+
+## Product boundaries
+- Founder A: Canadian nonexecutive shareholder / investor.
+- Founder B: California-resident founding shareholder; director/officer duties only when knowingly accepted.
+- Proposed U.S. corporation: not yet legally filed. No false company-registration claims.
+- Noetfield Systems Inc.: separate possible technology vendor via actual MSA/SOW; not parent, not legal signatory by default.
+- AI and vendor workers cannot silently sign, pay, file, submit 83(b), certify bank approval, sell securities, issue shares or hold themselves out as licensed attorneys.
+
+## Real product outcome
+Plan → lawful service contracting → authorized filing -> official evidence -> equity/EIN/bank steps -> annual obligations -> optional operations. Maintain status provenance and customer consent. Never claim false customers, traction, agent activity, investment or service capabilities.
+
+## Current deployment
+Public website, intake API, secure operator token and private lead queue are live. Payment, actual filing, customer auth and specialist workflows are future and explicitly labeled.
+Use existing Railway venture-web service, attached persistent volume, and existing GitHub repo. No duplicate infrastructure.
+See docs/00_MASTER_BLUEPRINT.md and docs/09_COMPETITOR_EVIDENCE_MATRIX.md as SSOT.

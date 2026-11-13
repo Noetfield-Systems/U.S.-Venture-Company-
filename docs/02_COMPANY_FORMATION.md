@@ -1,19 +1,31 @@
-# COMPANY FORMATION & SHAREHOLDER PLAYBOOK — DRAFT
-**Proposed, not yet executed.**
+# Formation & Governance Playbook v2 — two distinct company journeys
+**Draft for execution; nothing filed, signed or issued.** This document distinguishes (A) the proposed US venture's own formation from (B) paying customers' formation cases.
 
-1. Confirm distinctive legal name and real shareholders. Trademark and state name availability are separate.
-2. Appoint legitimate Delaware registered agent (service address is not automatically business office).
-3. Agree founder share split, par/authorized shares, vesting, IP ownership and future option pool; request professional review for tax-sensitive restricted stock/83(b).
-4. File Certificate of Incorporation directly with Delaware Secretary of State. Filing fees and franchise tax vary by share structure.
-5. Adopt bylaws, organizer/incorporator actions and board appointment; Delaware director must be a real natural person. Director/officer cannot be AI or a merely nominal figure.
-6. Apply free EIN naming actual responsible party. Open account with truthful beneficial owner and management disclosures.
-7. Where the company actually does business, verify California or other state foreign qualification, income tax and franchise tax nexus, even if Delaware-incorporated and online-first.
-8. Maintain Delaware registered agent, annual report and franchise tax. Watch short first-year timing and applicable California tax calendar.
-9. Review foreign ownership-related IRS Form 5472 when applicable, Canadian tax residence/control and foreign reporting. Canada founder only acts as investor if real conduct matches nonexecutive status.
-10. Non-executive shareholder is not automatically director, officer or corporation agent. A California resident shareholder alone does not automatically establish CA operation, but real sales/admin activity may.
+## A — Our company
+- Proposed Delaware C-Corporation, independent from Noetfield Systems Inc. Its U.S. partner is resident in California. Its Canada founder proposes to be a shareholder/investor only, not an officer/director by default.
+- Confirm legal name and name availability; identify real registered agent; choose share authorization/par value and ownership; set genuine founders' agreement, IP rights, vesting and cofounder board rights as approved by each actual person.
+- Identify genuine natural-person director(s), officers, incorporator and responsible party for EIN. Corporate officers/directors cannot be substituted by AI or an unconsenting name. A California shareholder may or may not create tax nexus depending on actual company conduct.
+- File Delaware charter with official Secretary of State and retain filing-stamped evidence. Adopt bylaws, stock purchase/subscription documentation, board actions, stock ledger, corporate recordbook.
+- Review any required 83(b) election deadlines when founder stock is subject to vesting; get US/Canadian cross-border tax advice on Form 5472, Canadian control/management and related-party transfer pricing.
+- Verify California foreign qualification only if actual operations create duty. Do not rent phantom office or use registered-agent address as false Google Maps location.
+- Apply for EIN via official IRS, then bank/merchant underwriting; no guarantee. Registered agent, Delaware report/tax and filing/calendar maintenance are real ongoing costs.
+- Foreign shareholders do not automatically qualify entity for SBA loan; visa rights and funding access are not created by state filing.
 
-## No-false-assurance rules
-U.S. incorporation does not confer visa, immigration, SBA loan eligibility, guaranteed bank access or VC funding. No blanket "zero personal liability": guarantees, fiduciary duties, tax and misconduct can create exposures. Proposed foreign ownership may block SBA 7(a)/504. No claims that simply using Delaware avoids California rules.
+## B — Future customers' formation path
+We must **not** say "we incorporate companies now" until real qualified people/services and filing paths are configured:
+1. Case assessed and quoted with itemized state and provider fees.
+2. Contract with true legal provider/merchant of record; consent to share sensitive information.
+3. Founder identity and incorporation instructions through protected workspace.
+4. Actual agent/filer accepts order; official filing submission and status evidence saved.
+5. Incorporation state certificate independently verified; company recordbook completed.
+6. EIN filed with proper responsible party, separately tracked; actual status from IRS.
+7. Equity/83(b) documents reviewed when needed; legal/tax service disclosed.
+8. Bank/payment application via independent service providers; no approval claim.
+9. Obligations calendar begins on correct factual triggers and annual dates.
+10. Client receives verified documents and can request corrections/support.
 
-## Gated but not blocked
-Formation requires actual identities and signatures. Public waitlist and legitimate interest gathering need not wait for legal formation; paid corporate services cannot misstate who contracts and receives funds.
+## Risk classification
+Actual hard requirements = verified signatures, authorized filer, correct state fees, privacy, non-misleading commercial status. Commercial risks such as low acquisition or uncertain renewal economics are accepted founder choices and do not justify artificial prelaunch blockers.
+
+## Regulatory/operational distinctions
+Public information and administrative filing support are distinct from individualized attorney advice and securities placement. Corporate formation, taxes, banking and financing responsibilities differ by geography and provider; written scope must say who actually performs each service.

@@ -1,14 +1,22 @@
-# PUBLIC REFERENCE REGISTER
-Retrieved/reviewed 2026-11-13; verify dates and prices before formation.
+# First-Party Reference Register — reviewed 2026-11-13
+Price/product pages, recorded as public claims from their owners. Recheck before public comparisons.
 - Stripe Atlas: https://stripe.com/atlas
-- Clerky: https://www.clerky.com/
-- Firstbase: https://www.firstbase.io/
+- Stripe founding steps: https://stripe.com/resources/more/how-to-incorporate-your-startup
+- Stripe 83(b) support: https://support.stripe.com/questions/atlas-filing-your-83%28b%29-election-using-auto-83%28b%29
+- Clerky pricing: https://www.clerky.com/pricing
+- Clerky main product: https://www.clerky.com/
+- Firstbase pricing: https://www.firstbase.io/pricing
+- doola: https://www.doola.com/
+- Gust Launch: https://gust.com/launch/
+- Gust legal landing: https://gust.com/launch/startup-legal/
+- StartGlobal pricing: https://startglobal.co/pricing/
+- Commenda US incorporation: https://www.commenda.io/incorporation/incorporate-in-united-states
+- LegalZoom corporation: https://www.legalzoom.com/business/business-formation/compare.html
 - Delaware Division of Corporations: https://corp.delaware.gov/
 - Delaware Franchise Tax: https://corp.delaware.gov/frtax/
-- California Secretary of State Business Programs: https://www.sos.ca.gov/business-programs
+- California Secretary of State: https://www.sos.ca.gov/business-programs
 - California Franchise Tax Board: https://www.ftb.ca.gov/
 - IRS EIN: https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers
 - IRS Form 5472: https://www.irs.gov/forms-pubs/about-form-5472
 - FinCEN BOI: https://www.fincen.gov/boi
-- U.S. SBA: https://www.sba.gov/
-External company service terms, taxation and legal status must be reverified at actual filing/contracting time.
+- SBA: https://www.sba.gov/

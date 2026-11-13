@@ -1,4 +1,4 @@
-name: Venture platform CI
+name: Formation platform CI
 on:
   push:
     branches: [main]

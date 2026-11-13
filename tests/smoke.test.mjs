@@ -13,14 +13,14 @@ test('intake and private operator lifecycle',async()=>{
  const base='http://127.0.0.1:'+port;
  try{
    for(let i=0;i<40;i++){try{const r=await fetch(base+'/api/health');if(r.ok)break}catch{}await new Promise(r=>setTimeout(r,100))}
-   assert.equal((await (await fetch(base+'/api/status')).json()).legalStatus,'pre-incorporation');
-   const body={name:'Example Founder',email:'founder@example.org',country:'Canada',goal:'Validate market for a software MVP',consent:true};
+   assert.equal((await (await fetch(base+'/api/status')).json()).legalStatus,'pre-incorporation');const home=await (await fetch(base+'/')).text();assert.match(home,/Launch your U.S./);assert.match(home,/C-Corporation/);
+   const body={name:'Example Founder',email:'founder@example.org',country:'Canada',entityType:'Delaware C-Corporation',fundingIntent:'Yes',goal:'Validate market for a software MVP',consent:true};
    const r=await fetch(base+'/api/intake',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
    assert.equal(r.status,201);const saved=await r.json();assert.match(saved.reference,/^VLC-/);
    const unauthorized=await fetch(base+'/api/admin/leads');assert.equal(unauthorized.status,401);
    const headers={Authorization:'Bearer '+token};
    const list=await (await fetch(base+'/api/admin/leads',{headers})).json();
-   assert.equal(list.leads.length,1);assert.equal(list.leads[0].email,body.email);
+   assert.equal(list.leads.length,1);assert.equal(list.leads[0].email,body.email);assert.equal(list.leads[0].entityType,'Delaware C-Corporation');
    const patched=await fetch(base+'/api/admin/leads/'+saved.reference,{method:'PATCH',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({status:'qualified',nextAction:'Follow up'})});
    assert.equal(patched.status,200);
    const deleted=await fetch(base+'/api/admin/leads/'+saved.reference,{method:'DELETE',headers});

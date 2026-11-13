@@ -1,17 +1,21 @@
-# INVESTOR POSITIONING & DILIGENCE ROADMAP
-## Thesis
-Cross-border digital founders spend effort on formation, tooling and advisory without a verified market-entry execution engine. A scoped AI-assisted desk may compress this execution gap, but until revenue/proofs exist the thesis is unvalidated.
+# Investor thesis and data room v2 — formation platform
+## Core business thesis
+An international founder needs more than a state filing: a coherent sequence from entity choice, incorporation and ownership to EIN, banking, compliance and operations. The market is already served by Stripe Atlas, Clerky, Firstbase, doola and Gust Launch; differentiate on real verified lifecycle support and transparent all-in/recurring costs, not an invented first-mover claim.
 
-## Expected future data room (do not fabricate)
-- Filed certificate + bylaws + cap table + board approvals.
-- Financials, bank statements, merchant receipts, tax status.
-- Real customers, contracts, retention, CAC, margins, attributed pipeline.
-- Technical architecture, independent QA, privacy and company OS vendor terms.
-- Market benchmarks, competitors, risk and defensibility.
-- Seed financing instruments reviewed by counsel.
+## Funding strategy
+Customer-funded formation/service revenue first; private angel/micro-VC interest after evidence; formal institutional financing later if economics and distribution warrant. Delaware C-Corp supports standard venture financing documents, but is not itself proof of investability. Any securities fundraising follows applicable offering rules, regardless of private, online or community source.
 
-## Capital strategy
-Start with customer-funded pilots. Independently sourced Angel and micro-VC discussions after actual evidence. Delaware C-Corp supports standard equity instruments but **does not itself guarantee funding**. Explore community-driven Web3 partnerships only as authentic business relationships; comply with private offering rules when money is exchanged for securities. Never advertise speculative investor commitments as present.
+## Data room folder plan
+01 Entity: official certificate, bylaws, board approvals, beneficial ownership records as legally applicable, equity ledger.
+02 People: founder agreements, actual role acceptance, advisor/vendor contracts and IP chain of title.
+03 Product: current app, application/filing state machine, integrations, third-party dependencies and audit.
+04 Customers: consented actual orders, received payments, receipts, customer cohorts, real renewals.
+05 Financial: bank statements, cost per case, paid service income, chargebacks/refunds, unit economics.
+06 Risk: licensing/provider scope, tax/legal disclaimers, cross-border data/privacy, incident logs.
+07 Commercial: SEO distribution metrics, referral rates, conversion funnel, competitor comparisons with primary sources.
 
-## Diligence honesty
-Founder shares and roles provisional until actual filings; no "100+ employees", "trusted by Stripe", fabricated customer numbers, launch-days guarantee or zero-risk loan claim.
+## Financing KPI discipline
+No mockup metrics or fake testimonials. An application is not a paid customer; an intake case is not a filed company. Track actual contribution profit after state/provider/support expenses. State clearly if no customers or paid transactions exist.
+
+## Direct benchmark references
+Stripe Atlas for formation and equity; Clerky for docs; Gust for financing/cap-table tools; Firstbase/doola for recurring services. Exclude unrelated design tech companies.

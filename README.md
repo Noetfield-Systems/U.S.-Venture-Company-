@@ -1,39 +1,40 @@
-# U.S. Venture Company — founding-stage launch platform
+# U.S. Venture Company — U.S. incorporation and startup-operations platform
+**Version 2.0 | 2026-11-13 | founding-stage; legal entity is not yet incorporated**
 
-**Public repo | pre-incorporation | 13 November 2026**
+This is an independent proposed American venture: a platform for global founders planning to form a Delaware C-Corp or U.S. LLC, set up equity/EIN and understand ongoing corporate obligations. **Primary product benchmark: Stripe Atlas.** Direct competitors: Clerky, Firstbase, doola, Gust Launch, StartGlobal and Commenda. We do **not** benchmark unrelated CRMs, design tools or abstract enterprise SaaS.
 
-This is the implementation repository for a proposed U.S.-incorporated, globally operated venture launch and execution platform. Neither this repository nor the public website means the legal entity has been incorporated. Its legal name, officers, board, ownership split, and registered agent are still pending.
+### Product reality
+LIVE: English-responsive public homepage, formation-readiness intake with entity choice and funding intent, server-side consented storage, limited private operator console, API health/status.
+NOT YET LIVE: U.S. legal entity, formation filing, EIN applications, founder share issuance, 83(b) filing, bank/merchant approval, customer authentication, partner execution, financial checkout, real customer incorporated.
+No fake company filings, bank accounts, customer logos, partnership endorsements, paid customers or financing performance.
 
-## Live application
-- Premium English-language responsive website and working multi-step venture assessment.
-- Secure server-side form validation, rate limit, consent timestamp, durable prospect queue.
-- Restricted operator desk at \`/operator\` with status, owner, next action and notes.
-- Pricing labeled as pilot hypotheses, not a payment link.
-- Explicit pre-incorporation and no-fabricated-traction disclosures.
+### Legal and founder boundaries
+Two proposed owners: Canada-based nonexecutive investor/shareholder, California-resident U.S. founding partner. Equity split, board/officer roles, agent, actual contracts and filing are unfinalized. Noetfield Systems Inc. is a separate Canadian technology vendor under prospective agreement, not the registered company or its automatically authorized manager. State of incorporation and actual state-of-business obligations differ.
 
-## Stack and run
-Requires Node.js 20+. No external runtime dependencies.
+### Developer run
+Node.js 20+. No npm dependencies.
+- npm start — executes local smoke test then starts HTTP server.
+- npm test — checks intake creation, admin authentication, update, delete, and formation-intent storage.
+- GET /api/health /api/status
+- POST /api/intake (assessment, with explicit contact consent)
+- GET/PATCH/DELETE /api/admin/leads (Bearer ADMIN_TOKEN)
+- /operator — private operator UI.
 
-\`\`\`bash
-npm start
-# GET /api/health and /api/status
-# POST /api/intake
-\`\`\`
+Production Railway: one replica, persistent volume at DATA_DIR=/data, high-entropy ADMIN_TOKEN. File-based JSON storage is for modest pilot throughput; migrate to Postgres before sensitive file collection, customer workspaces or replicas.
 
-Railway recommended: set \`DATA_DIR=/data\`; mount a persistent service volume at \`/data\`; set high-entropy \`ADMIN_TOKEN\` (do not commit it). One service replica due to file-backed writes. Set \`PORT\` using Railway runtime default. For enterprise or multi-replica scale, move to managed Postgres before introducing concurrent workers.
+### Where to read
+- [Master blueprint](docs/00_MASTER_BLUEPRINT.md)
+- [ICP and GTM](docs/01_PRODUCT_ICP_GTM.md)
+- [Founder/entity operating boundaries](docs/02_COMPANY_FORMATION.md)
+- [Noetfield vendor/Company OS](docs/03_OPERATIONS_COMPANY_OS.md)
+- [30/60/90 growth plan](docs/04_GROWTH_30_60_90.md)
+- [Contracts and privacy templates](docs/05_LEGAL_PRIVACY_TEMPLATES.md)
+- [Investor thesis](docs/06_INVESTOR_DATAROOM.md)
+- [QA and proof obligations](docs/07_QA_SECURITY_RELEASE.md)
+- [Primary sources](docs/08_SOURCES.md)
+- [Direct competitor evidence matrix](docs/09_COMPETITOR_EVIDENCE_MATRIX.md)
+- [Atlas-category visual and product UX spec](docs/10_ATLAS_NATIVE_UX_SPEC.md)
+- [Pricing and unit economics](docs/11_PRICING_UNIT_ECONOMICS.md)
+- [Website marketing copy](docs/12_MARKETING_COPY_EN.md)
 
-## Documentation
-Read [docs/00_MASTER_BLUEPRINT.md](docs/00_MASTER_BLUEPRINT.md) and [docs/01_PRODUCT_ICP_GTM.md](docs/01_PRODUCT_ICP_GTM.md), then company formation, operations, contracts, investor assets and quality checklist. The original full 27-document planning package remains a separate founder working artifact; repository docs contain an operationally integrated summary.
-
-## Company boundaries
-- **Founder A:** Canada-based non-executive shareholder/investor (proposed).
-- **Founder B:** California-based founding shareholder; any director/officer role only upon explicit agreement.
-- **Noetfield Systems Inc.:** separate Canadian technical service vendor (prospective, under arms-length scope).
-- **Entity:** Delaware C-Corp proposed; unregistered as of this release.
-- Do not hold out as a registered company, legal adviser, bank, government affiliate, placement agent, or investor-backed venture.
-
-## Verification
-For public health use \`GET /api/health\`. For operator access provide \`Authorization: Bearer <ADMIN_TOKEN>\` to \`GET /api/admin/leads\`. Do not put admin tokens in public URLs or client HTML. Customers only receive a random inquiry reference; their details are not publicly indexed.
-
-## Remaining external launch steps
-Confirm company name, corporate formation, bank/merchant, director/officer roles, cap table, contract signatures, tax characterization, and lawful service supply before activating checkout. Real cases must pass evidence checks before claiming delivery or traction.
+**Runbook:** marketing intake is real. Official company formation services must only be advertised as available once qualified filing/payment contracting and verifiable delivery are genuinely in place.

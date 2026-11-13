@@ -1,9 +1,9 @@
 {
   "name": "us-venture-company",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Founding-stage venture launch desk",
+  "description": "U.S. company formation planning and founder operating platform",
   "engines": {
     "node": ">=20"
   },

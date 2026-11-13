@@ -20,3 +20,102 @@
 @media(max-width:900px){.nav{height:72px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;background:#0c1a32;border-bottom:1px solid #344d76;padding:24px 35px;gap:20px}.nav-links.open{display:flex}.hero{padding-top:148px}.hero-layout{grid-template-columns:1fr}.hero-copy{padding:20px 0 30px}.hero h1{font-size:clamp(49px,7vw,73px)}.hero-visual{height:500px;max-width:720px;width:100%;margin:auto}.trust-line{margin-top:25px}.trust-values{gap:15px}.trust-values span+span{padding-left:15px}.intro-heading,.section-heading{display:block}.intro-heading>p,.section-heading>p{max-width:700px;margin-top:20px}.feature-visual{grid-template-columns:1.6fr 1fr}.feature-main{padding:28px}.service-card{padding:24px}.service-grid{gap:10px}.process-layout{gap:35px}.assessment-wrap{gap:24px}.form-panel{padding:25px}}
 @media(max-width:650px){.container{width:calc(100% - 36px)}.announcement{font-size:9px;gap:6px;padding:5px}.nav-wrap{top:32px}.nav{height:67px}.brand-word{font-size:15px}.brand-mark{width:30px}.brand-mark i{height:26px;width:10px}.brand-mark i+i{height:20px}.nav-actions>.btn{display:none}.hero{padding-top:128px;min-height:0}.eyebrow{font-size:8px;margin-bottom:22px}.hero h1{font-size:clamp(44px,10.5vw,61px)}.hero-lede{font-size:13px}.hero-actions{gap:9px}.hero-actions .btn{font-size:11px;min-height:45px;padding:12px 15px;gap:12px}.hero-visual{height:325px;transform:scale(.96);transform-origin:center top;margin-top:16px}.product-frame{width:620px;right:auto;left:50%;margin-left:-310px;top:12px;transform:scale(.63) rotate(-2deg);transform-origin:center top;height:385px}.hero-visual:hover .product-frame{transform:scale(.63)}.top-floating{top:-3px;right:0;transform:scale(.78)}.bottom-floating{bottom:10px;left:0;transform:scale(.8)}.orbit{right:-30%;top:-75px}.glow-disc{width:350px;right:0}.trust-line{flex-direction:column;align-items:flex-start;padding:21px 0;gap:12px}.trust-values{width:100%;flex-wrap:wrap;gap:12px;font-size:7px}.trust-values span+span{border:0;padding:0}.intro{padding:70px 0 30px}.section-top{margin-bottom:23px}.intro-heading h2,.section-heading h2{font-size:30px}.intro-heading>p,.section-heading p{font-size:12px}.feature-visual{grid-template-columns:1fr}.feature-main{padding:25px 21px;min-height:290px}.feature-headline{font-size:23px}.flow-rail{gap:4px}.flow-node{min-width:0}.flow-node strong{font-size:7px}.flow-node small{font-size:7px}.flow-connector{display:none}.feature-aside{padding:26px;min-height:250px}.services{padding:55px 0 75px}.service-grid{grid-template-columns:1fr;gap:13px}.service-card{min-height:260px}.service-icon{margin-top:24px}.dark-break{padding:70px 0}.process-layout{grid-template-columns:1fr;gap:36px}.process-layout h2{font-size:34px}.pricing{padding:75px 0}.price-grid{grid-template-columns:1fr;gap:18px}.price-card{min-height:370px}.price-card.featured{transform:none}.about-section{padding:75px 0}.about-grid{grid-template-columns:1fr;gap:12px}.about-section h2{font-size:38px}.about-grid>div+div{padding-top:0}.faq-section{padding:75px 0}.faq-grid{grid-template-columns:1fr;gap:10px}.faq-grid h2{font-size:33px}.assessment-section{padding:75px 0}.assessment-wrap{grid-template-columns:1fr;gap:26px}.assessment-side{padding:0}.assessment-side h2{font-size:38px}.assessment-promises{margin-top:26px}.form-panel{padding:24px 19px}.field-row{grid-template-columns:1fr;gap:0}.form-header h3{font-size:19px}.form-progress{font-size:9px}.footer-top{display:block}.footer-links{margin-top:40px;gap:65px}.footer-bottom{flex-direction:column}.policy-page{padding-top:145px}.policy-body{padding:22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+/* Formation-category v2 visual system — Stripe Atlas is the sole primary product-design benchmark. */
+:root{--violet:#635bff;--ink:#17213a;--muted:#637088;--max:1230px}
+body{background:#fff;color:#19233b}
+.nav-wrap{background:#ffffffc4;border-bottom:1px solid #e4e8f1;backdrop-filter:blur(24px)}
+.brand{color:#19223b}.brand-word>span{color:#43506a}.brand-word small{color:#8490a8}
+.brand-mark i{background:linear-gradient(145deg,#867fff,#544ce8)}.brand-mark i+i{background:linear-gradient(160deg,#a8a3ff,#635bff)}
+.nav-links a,.nav-login{color:#4c5670}.nav-links a:hover,.nav-login:hover{color:#4e46ce}
+.nav .btn-primary,.atlas-primary{background:linear-gradient(120deg,#635bff,#473ceb);box-shadow:0 8px 22px #5147ed22;border:0;color:#fff}
+.announcement{background:#f4f2ff;color:#5047ae}.announcement a{color:#423ac1}.announcement .signal{background:#8179ff;box-shadow:none}
+.atlas-hero{position:relative;padding:180px 0 0;overflow:hidden;background:linear-gradient(155deg,#fff 5%,#fafaff 70%,#f4f2ff 100%)}
+.atlas-ambient{pointer-events:none;position:absolute;width:870px;height:730px;top:85px;right:-110px;background:radial-gradient(circle at 70% 40%,#c5baff6b 0%,#e6e0ff4a 42%,transparent 72%);filter:blur(4px)}
+.atlas-hero-grid{position:relative;display:grid;grid-template-columns:49% 51%;align-items:center;min-height:580px;gap:12px}
+.atlas-copy{position:relative;z-index:2;padding-bottom:60px}
+.atlas-kicker{display:flex;align-items:center;gap:10px;color:#5e59cc;letter-spacing:.12em;font-size:10px;font-weight:800;margin-bottom:30px}
+.kicker-dot{width:8px;height:8px;background:#645cff;box-shadow:0 0 0 5px #eae7ff;border-radius:50%}
+.atlas-copy h1{font-size:clamp(45px,5.05vw,71px);line-height:1.11;letter-spacing:-.068em;margin:0 0 26px;font-weight:800}
+.atlas-copy h1 span{color:#6158ee}
+.atlas-copy>p{max-width:530px;color:#626d83;font-size:15px;line-height:1.88;margin-bottom:25px}
+.atlas-hero-actions{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.atlas-primary{min-height:52px;padding:14px 22px;font-weight:800;font-size:12px;gap:25px}
+.atlas-secondary{font-size:12px;font-weight:800;color:#5b53df;display:flex;align-items:center;gap:13px}
+.atlas-disclosure{margin-top:30px;display:flex;align-items:flex-start;gap:8px;font-size:10px;color:#8990a0;max-width:510px;line-height:1.65}
+.atlas-preview{height:475px;position:relative;min-width:0;padding-top:55px}
+.atlas-preview:before{content:'';position:absolute;right:-80px;top:3px;width:470px;height:480px;background:linear-gradient(130deg,#d8ccff99,#eef0ff22);border-radius:44% 56% 33% 67%/45% 45% 55% 55%;transform:rotate(-24deg)}
+.atlas-preview-window{position:relative;z-index:2;max-width:650px;height:392px;border:1px solid #dce1f2;border-radius:14px;background:#fff;overflow:hidden;box-shadow:0 30px 65px #32327b26,0 4px 15px #5766ad19;transform:rotate(-1.5deg)}
+.atlas-browser{height:39px;display:flex;align-items:center;gap:10px;padding:0 14px;border-bottom:1px solid #e9edf5;background:#fbfcff;font-size:9px;color:#8792a4}
+.atlas-browser small{margin-left:auto;font-size:8px;font-weight:800;letter-spacing:.07em;color:#857ce0;background:#f0edff;border-radius:5px;padding:5px}
+.atlas-lights{display:flex;gap:5px}.atlas-lights i{width:7px;height:7px;border-radius:50%;background:#f4a09a}.atlas-lights i:nth-child(2){background:#f4c27e}.atlas-lights i:nth-child(3){background:#96cb9b}
+.atlas-app{display:grid;grid-template-columns:29% 71%;height:calc(100% - 39px)}
+.atlas-app-side{background:#fbfbfe;border-right:1px solid #e9edf5;padding:21px 13px}
+.atlas-app-brand{font-size:12px;font-weight:800;color:#5950d0;margin-bottom:24px}
+.atlas-app-nav{height:34px;display:flex;align-items:center;padding:9px 10px;color:#8490a6;font-size:10px;border-radius:7px;margin:4px 0}
+.atlas-app-nav.on{background:#eae8ff;color:#554cd7;font-weight:800}
+.atlas-app-main{padding:24px 23px 16px;overflow:hidden}
+.atlas-app-top{font-size:8px;font-weight:800;letter-spacing:.14em;color:#8f9aab;display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.atlas-app-top>span{letter-spacing:0;font-size:8px;color:#655ce4;background:#efedff;padding:6px 9px;border-radius:20px}
+.atlas-app-main h3{font-size:19px;letter-spacing:-.05em;margin-bottom:5px}
+.atlas-app-main>p{font-size:10px;color:#8892a2;line-height:1.6;margin-bottom:17px}
+.atlas-choice{border:1px solid #e5e9f3;display:flex;align-items:center;gap:11px;border-radius:8px;padding:11px 12px;margin:8px 0;background:#fff}
+.atlas-choice.selected{border-color:#8f84ff;background:#f7f6ff}
+.choice-logo{width:30px;height:30px;display:flex;align-items:center;justify-content:center;background:#eeeaff;color:#655ce8;border-radius:7px;font-size:16px}
+.atlas-choice div{flex:1}.atlas-choice strong{display:block;font-size:10px;color:#27314b}.atlas-choice small{display:block;font-size:8px;color:#8994a6;margin-top:5px}
+.choice-radio{font-size:14px;color:#a5aacc}.selected .choice-radio{color:#655ce8}
+.atlas-app-foot{display:flex;justify-content:space-between;align-items:center;margin-top:19px;font-size:8px;color:#8790a6}
+.atlas-continue{padding:8px 12px;background:#645bfa;color:#fff;border-radius:6px;font-weight:700}
+.atlas-mini-note{position:absolute;z-index:3;right:-20px;bottom:0;display:flex;align-items:center;gap:10px;padding:12px 17px;border:1px solid #e5e3ff;border-radius:9px;background:#fff;box-shadow:0 10px 24px #5057a622}
+.atlas-mini-note>span{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#ddf8ed;color:#2a9c79}
+.atlas-mini-note strong{display:block;font-size:10px}.atlas-mini-note small{display:block;font-size:8px;color:#8893a5;margin-top:4px}
+.atlas-trust{position:relative;min-height:85px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #e9e7f7;font-size:11px;color:#7b859a}
+.atlas-trust>span{font-weight:700;color:#64708c}.atlas-trust>div{display:flex;gap:34px}.atlas-trust>div span{color:#6159ce;font-size:10px;font-weight:700}
+.atlas-section{padding:95px 0}.atlas-section-top{display:flex;justify-content:space-between;align-items:center;color:#8c93a7;font-size:10px;letter-spacing:.13em;font-weight:800;margin-bottom:27px}
+.atlas-section-top span:first-child{color:#635be0}
+.atlas-title-row{display:flex;justify-content:space-between;align-items:end;gap:65px;margin-bottom:40px}
+.atlas-title-row h2{font-size:clamp(33px,3.8vw,51px);line-height:1.2;letter-spacing:-.055em;font-weight:800;margin:0}
+.atlas-title-row h2 span{color:#7e879d}
+.atlas-title-row p{max-width:345px;font-size:12px;color:#6e7a8c;margin:0}
+.atlas-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}
+.atlas-benefits article{padding:32px;border:1px solid #e8eaf4;border-radius:11px;background:#fff;min-height:290px;display:flex;flex-direction:column}
+.atlas-icon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;background:#eeecff;color:#6159d7;font-size:27px;border-radius:11px;margin-bottom:29px}
+.atlas-benefits h3{font-size:19px;letter-spacing:-.04em;margin-bottom:11px}
+.atlas-benefits p{font-size:12px;color:#718093;line-height:1.7}
+.atlas-benefits a{font-size:11px;color:#584dde;font-weight:800;margin-top:auto}
+.atlas-formation{background:#f8f9fd}
+.atlas-paths{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.atlas-paths article{border:1px solid #e1e4f3;border-radius:13px;padding:38px 40px;background:#fff;box-shadow:0 5px 14px #494f7310}
+.atlas-path-label,.atlas-plan-label{font-size:9px;color:#7069df;letter-spacing:.12em;font-weight:800;margin-bottom:23px}
+.atlas-paths h3{font-size:27px;margin:0 0 15px}
+.atlas-paths p{font-size:12px;color:#758197;min-height:76px}
+.atlas-path-list{display:grid;gap:12px;margin:18px 0 28px}
+.atlas-path-list span{font-size:11px;color:#3b4c66}
+.atlas-path-list span:before{content:'✓';color:#6057f5;margin-right:9px}
+.atlas-paths article>a{color:#5f56dc;font-size:12px;font-weight:800}
+.atlas-paths article>a span{margin-left:8px}
+.atlas-steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.atlas-step{border-top:2px solid #e6e6f0;padding-top:25px}
+.atlas-step>span{color:#655de2;font-size:28px;font-weight:800;letter-spacing:-.05em}
+.atlas-step h3{font-size:21px;margin:20px 0 10px}
+.atlas-step p{font-size:12px;color:#6f7b8d;min-height:95px}
+.atlas-step small{font-size:8px;letter-spacing:.06em;color:#887ce2;font-weight:800;background:#f2efff;padding:7px 9px;border-radius:6px}
+.atlas-pricing{background:#fafaff}
+.atlas-price-grid{display:grid;grid-template-columns:1fr 1fr;gap:19px}
+.atlas-price-grid>article{border:1px solid #e4e7f1;background:#fff;border-radius:14px;padding:39px}
+.atlas-price-primary{box-shadow:0 17px 36px #6055bb11}
+.atlas-price-grid h3{font-size:23px;margin:0 0 14px}
+.atlas-price-value{font-size:35px;font-weight:800;letter-spacing:-.06em;margin-bottom:14px}
+.atlas-price-grid p{color:#728096;font-size:12px}
+.atlas-price-grid ul{list-style:none;margin:24px 0 35px;padding:0}
+.atlas-price-grid li{font-size:11px;border-bottom:1px solid #edf0f6;padding:10px 0}
+.atlas-price-grid li:before{content:'✓';color:#625be1;margin-right:10px}
+.atlas-price-grid .btn{margin-top:auto}
+.atlas-price-link{color:#5f55e0;font-weight:800;font-size:12px}
+.atlas-price-foot{font-size:10px;color:#8791a2;margin:20px 0 0;line-height:1.7}
+.about-section{background:#f0f2fc}.about-grid a{color:#5f55d7}
+.assessment-section{background:linear-gradient(135deg,#efedff,#f8f9ff);color:#17213d}
+.assessment-side .overline{color:#635be1}.assessment-side>p{color:#6d7b91}.assessment-promises>div{border-top-color:#d3d4eb;color:#5b6880}.assessment-promises span{color:#685de5}
+.footer{background:#f9faff;color:#697690}.footer-brand .brand{color:#202a40}.footer-brand .brand-word>span{color:#515e77}.footer-links strong{color:#28344e}.footer-links a:hover{color:#5b52d8}.footer-bottom{border-top-color:#e0e4ef;color:#8792a5}
+@media(max-width:940px){.nav-links{background:white;border-bottom:1px solid #e0e4f0}.nav-links a{color:#1c2b49}.menu-toggle{color:#263450}.atlas-hero-grid{grid-template-columns:1fr;padding-top:15px}.atlas-copy{padding-bottom:20px}.atlas-preview{height:455px;max-width:700px;width:100%;margin:auto}.atlas-trust{flex-wrap:wrap;gap:16px;padding:18px 0}.atlas-title-row{display:block}.atlas-title-row p{max-width:650px;margin-top:17px}.atlas-steps-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.atlas-hero{padding-top:136px}.atlas-kicker{font-size:8px;margin-bottom:20px}.atlas-copy h1{font-size:clamp(43px,10vw,60px)}.atlas-copy>p{font-size:13px}.atlas-hero-actions{gap:17px}.atlas-preview{height:312px;padding-top:24px}.atlas-preview-window{width:610px;max-width:initial;height:392px;left:50%;transform:translateX(-50%) scale(.60);transform-origin:center top}.atlas-mini-note{bottom:3px;right:-2px;transform:scale(.8);transform-origin:bottom right}.atlas-trust>div{gap:11px;flex-wrap:wrap}.atlas-trust>div span{font-size:9px}.atlas-section{padding:68px 0}.atlas-title-row h2{font-size:31px}.atlas-benefits,.atlas-paths,.atlas-price-grid{grid-template-columns:1fr}.atlas-benefits article{min-height:235px}.atlas-paths article,.atlas-price-grid>article{padding:26px}.atlas-steps-grid{gap:20px}.atlas-step p{min-height:120px}.nav .btn-primary{display:none}}
