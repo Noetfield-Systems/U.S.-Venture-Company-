@@ -1,0 +1,1 @@
+Founding-stage launch platform. Check /api/health for server health. A 200 response is not incorporation proof.
