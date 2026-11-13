@@ -13,7 +13,7 @@ test('intake and private operator lifecycle',async()=>{
  const base='http://127.0.0.1:'+port;
  try{
    for(let i=0;i<40;i++){try{const r=await fetch(base+'/api/health');if(r.ok)break}catch{}await new Promise(r=>setTimeout(r,100))}
-   assert.equal((await (await fetch(base+'/api/status')).json()).legalStatus,'pre-incorporation');const home=await (await fetch(base+'/')).text();assert.match(home,/Launch your U.S./);assert.match(home,/C-Corporation/);
+   assert.equal((await (await fetch(base+'/api/status')).json()).legalStatus,'pre-incorporation');const home=await (await fetch(base+'/')).text();assert.match(home,/Build your U.S./);assert.match(home,/C-Corporation/);
    const body={name:'Example Founder',email:'founder@example.org',country:'Canada',entityType:'Delaware C-Corporation',fundingIntent:'Yes',goal:'Validate market for a software MVP',consent:true};
    const r=await fetch(base+'/api/intake',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
    assert.equal(r.status,201);const saved=await r.json();assert.match(saved.reference,/^VLC-/);
